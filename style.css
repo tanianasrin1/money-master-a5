@@ -11,3 +11,11 @@ body {
 .form-background {
   background-color: rgb(223, 231, 238);
 }
+
+.button-color {
+  background-color: #e1341e;
+  border: none;
+  padding: 12px 26px;
+  color: white;
+  border-radius: 5px;
+}
