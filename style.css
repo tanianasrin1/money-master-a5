@@ -7,3 +7,7 @@ body {
 .Title {
   color: #29aad6;
 }
+
+.form-background {
+  background-color: rgb(223, 231, 238);
+}
