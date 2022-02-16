@@ -15,7 +15,11 @@ body {
 .button-color {
   background-color: #e1341e;
   border: none;
-  padding: 12px 26px;
+  padding: 8px 26px;
   color: white;
-  border-radius: 5px;
+  border-radius: 3px;
+}
+.secondary {
+  border: none;
+  background-color: #e1341e;
 }
