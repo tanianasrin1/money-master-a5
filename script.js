@@ -1,15 +1,6 @@
-document.getElementById('total-calc').addEventListener('click',function(){
-    const input = document.getElementById('total-income');
-    const amount = input.value
-   
-    const total = document.getElementById('balance-total')
-    total.innerText = amount;
-    input.value = '';
-
-    
-})
 
 document.getElementById('total-calc').addEventListener('click', function(){
+
     const foodInput = document.getElementById('foot-input').value
     const foodAmount = parseFloat(foodInput);
     const rentInput = document.getElementById('rent-input').value
@@ -20,6 +11,11 @@ document.getElementById('total-calc').addEventListener('click', function(){
    const expensiveTotal = document.getElementById('total-expensive')
    expensiveTotal.innerText = totalCost
 
+   const input = document.getElementById('total-income').value
+   const balanceTotal = document.getElementById('balance-total')
+   balanceTotal.innerText = input - totalCost
+
+
+
 
 })
-
