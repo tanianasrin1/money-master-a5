@@ -66,13 +66,18 @@ document.getElementById('total-calc').addEventListener('click', function(){
        alert('please enter the valid input')
    }
 
-  
+
+   //    extra part error
+ if(  inputincome <= totalCost){
+    alert('please enter right input')
+ }
+
  
 })
 
 //  saving part
 document.getElementById('save-button').addEventListener('click', function(){
-    
+
     // saving Amount part
     const incomeInput = document.getElementById('total-income').value
     const incomeAmount = parseFloat(incomeInput)
