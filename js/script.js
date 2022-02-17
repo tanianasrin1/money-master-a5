@@ -1,5 +1,5 @@
 
-document.getElementById('total-calc').addEventListener('click', function(){
+document.getElementById('total-calc').addEventListener('click', function(){1
 
     const foodInput = document.getElementById('foot-input').value
     const foodAmount = parseFloat(foodInput);
@@ -14,8 +14,7 @@ document.getElementById('total-calc').addEventListener('click', function(){
    const input = document.getElementById('total-income').value
    const balanceTotal = document.getElementById('balance-total')
    balanceTotal.innerText = input - totalCost
-
-
-
+   
+  
 
 })
