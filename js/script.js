@@ -19,6 +19,8 @@ document.getElementById('total-calc').addEventListener('click', function(){
    balanceTotal.innerText = inputincome - totalCost
 
 
+   
+
 //    error handling negative value
    if(foodInput <0 ){
        alert('please enter the valid number')
@@ -70,15 +72,19 @@ document.getElementById('total-calc').addEventListener('click', function(){
 
 //  saving part
 document.getElementById('save-button').addEventListener('click', function(){
+    
+    // saving Amount part
     const incomeInput = document.getElementById('total-income').value
-    const incomeAmount = parseFloat(incomeInput);
+    const incomeAmount = parseFloat(incomeInput)
     const savingInput = document.getElementById('save-input').value
     const savingAmount = parseFloat(savingInput)
-    // const pertange = (incomeAmount / 100) *10 
-    //  savingAmount.innerText = pertange
+    const percentageTotal = (incomeAmount/100)* savingAmount
+    const savingParcentageTotal = document.getElementById('saving-parcentage')
     
-    console.log(savingInput)
-    
+    savingParcentageTotal.innerText = percentageTotal
 
+  
+    
+    
  
 })
